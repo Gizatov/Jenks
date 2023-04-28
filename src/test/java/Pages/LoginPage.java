@@ -8,13 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
     WebDriver driver;
 
-    @FindBy(name = "username")
+    @FindBy(name = "usrname")
     WebElement userIdFld;
 
-    @FindBy(name = "password")
+    @FindBy(name = "p")
     WebElement passwordFld;
 
-    @FindBy(id = "loginbtn")
+    @FindBy(id = "log")
     WebElement loginBtn;
 
 
@@ -28,7 +28,7 @@ public class LoginPage {
     }
 
     public void fillPassword(String password){
-        passwordFld.sendKeys(password);
+        passwordFld.sendKeys(passwora);
     }
 
     public void clickLoginBtn(){
